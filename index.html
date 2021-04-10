@@ -8,7 +8,7 @@
         }
     /*page specific css*/
     .health-suggestions {
-        #background-color: blue;
+        #background-color: #add8e6;
     }
     .health-suggestions > div {
         background-color: #add8e6;
@@ -18,12 +18,9 @@
     .suggestion-container{
         font-size: 15px;
         padding: 20px;
-        #min-height: 300px;
         display: grid;
-        #width: 100%;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(5, 1fr);
-        #grid-auto-rows: 1fr;
         grid-gap: 20px;
         grid-template-areas:
         "suggestion1 suggestion1b newSuggestion"
@@ -31,13 +28,12 @@
         "suggestion3 suggestion3b newSuggestion"
         "suggestion4 suggestion4b newSuggestion"
         "suggestion5 suggestion5b newSuggestion";
-        #font-family: monospace;
         background: WHITE;
     }
     .suggestion-container > div {
         background-color: white ;
         padding: 10px;
-        #text-align: center;
+        text-align: center;
     }
     .suggestion1 {grid-area: suggestion1;}
     .suggestion2 {grid-area: suggestion2;}

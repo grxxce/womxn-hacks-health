@@ -3,12 +3,31 @@
 <head>
     <title>Page Title</title>
 <style>
+    /*website level css*/
     h1 {
         text-align: center;
         }
-    /*page specific css*/
+    
+    /*navigation bar css*/
+    .topnav {
+        overflow: hidden;
+        background-color: #add8e6;
+        position: fixed;
+        width: 100%;  /*This 100% makes the nav go beyond the rest of the page.. any ideas?*/
+        top: 0;
+        z-index: 1;
+    }
+    .topnav a {
+        float: right;
+        color:black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    /*page/section specific css*/
     .health-suggestions {
-        #background-color: #add8e6;
+        background-color: #add8e6;
     }
     .health-suggestions > div {
         background-color: #add8e6;
@@ -66,6 +85,10 @@
 </head>
 
 <body>
+    <section class="topnav">
+        <a href="#login-link">Log In Here</a>
+    </section>
+    <div>Calendar and reflection section</div>
     <div class="health-suggestions">
         <h1>Tips from your community</h1>
         <div class="suggestion-container">
